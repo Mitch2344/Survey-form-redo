@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Movies Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: red;
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: white;
+        }
+        label {
+            font-weight: bold;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Marvel Movies Survey</h2>
+        <form action="#" method="post">
+
+            <div class="question">
+                <label for="favorite_movie">1. What is your favorite Marvel movie?</label>
+                <input type="text" id="favorite_movie" name="favorite_movie" required>
+            </div>
+
+            <div class="question">
+                <label for="movie_rating">2. How would you rate the Marvel Cinematic Universe (MCU)?</label>
+                <div class="rating">
+                    <label for="1">1</label>
+                    <input type="radio" id="1" name="movie_rating" value="1">
+                    <label for="2">2</label>
+                    <input type="radio" id="2" name="movie_rating" value="2">
+                    <label for="3">3</label>
+                    <input type="radio" id="3" name="movie_rating" value="3">
+                    <label for="4">4</label>
+                    <input type="radio" id="4" name="movie_rating" value="4">
+                    <label for="5">5</label>
+                    <input type="radio" id="5" name="movie_rating" value="5">
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="character_favorite">3. Who is your favorite Marvel character?</label>
+                <input type="text" id="character_favorite" name="character_favorite" required>
+            </div>
+
+            <div class="question">
+                <label for="villain_favorite">4. Who is your favorite Marvel villain?</label>
+                <input type="text" id="villain_favorite" name="villain_favorite" required>
+            </div>
+
+            <div class="question">
+                <label for="impact_rating">5. How impactful do you think the MCU has been on popular culture?</label>
+                <div class="rating">
+                    <label for="1">1</label>
+                    <input type="radio" id="1" name="impact_rating" value="1">
+                    <label for="2">2</label>
+                    <input type="radio" id="2" name="impact_rating" value="2">
+                    <label for="3">3</label>
+                    <input type="radio" id="3" name="impact_rating" value="3">
+                    <label for="4">4</label>
+                    <input type="radio" id="4" name="impact_rating" value="4">
+                    <label for="5">5</label>
+                    <input type="radio" id="5" name="impact_rating" value="5">
+                </div>
+            </div>
+
+            <div class="question">
+                <label for="movie_expectations">6. What are your expectations for future Marvel movies?</label>
+                <textarea id="movie_expectations" name="movie_expectations" rows="4" required></textarea>
+            </div>
+
+            <div class="question">
+                <label for="overall_experience">7. How satisfied are you with your overall Marvel movie experience?</label>
+                <select id="overall_experience" name="overall_experience" required>
+                    <option value="very_satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="very_dissatisfied">Very Dissatisfied</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="suggestions">8. Do you have any suggestions for future Marvel movies?</label>
+                <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Survey</button>
+        </form>
+    </div>
+
+</body>
+</html>
